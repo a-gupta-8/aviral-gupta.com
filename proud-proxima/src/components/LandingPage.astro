@@ -1,0 +1,36 @@
+<div class="welcomeText">
+    <div class="typewriter">
+        <p class="text">Hi, I'm Aviral Gupta.</p>
+    </div>
+</div>
+
+<style>
+
+.welcomeText {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.text {
+    font-size: 5rem;
+    letter-spacing: 10px;
+    font-family: monospace;
+    border-right: 5px solid;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: 
+        typing 2s steps(21),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+</style>
+
