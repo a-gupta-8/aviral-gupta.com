@@ -24,7 +24,7 @@ export default function NavBox({ page, href }) {
   }, [hovering, href]);
 
   return (
-    <div className={`nav-box ${show ? "show" : ""}`} onMouseEnter={() => setHovering(true)} onMouseLeave={() => setHovering(false)}>
+    <div className={`nav-box ${show ? "show" : ""}`} onMouseEnter={() => show && setHovering(true)} onMouseLeave={() => setHovering(false)}>
       <span className="nav-text">{page}</span>
     </div>
   );
