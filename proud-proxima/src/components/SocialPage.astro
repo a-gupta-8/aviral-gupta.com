@@ -1,0 +1,47 @@
+---
+import Social from './Social.jsx';
+---
+
+<div class="social-tab">
+      <div class="social-list-item">
+        <Social imageSrc="../../public/github.webp" alt="GitHub" href="https://github.com/a-gupta-8" client:load/>
+        <span class="social-label">/a-gupta-8</span>
+      </div>
+      <div class="social-list-item">
+        <Social imageSrc="../../public/linkedin.webp" alt="LinkedIn" href="https://www.linkedin.com/in/aviral-gupta-cs88/" client:load/>
+        <span class="social-label">/in/aviral-gupta-cs88/</span>
+      </div>
+      <div class="social-list-item">
+        <Social imageSrc="../../public/x.png" alt="X" href="https://x.com/a_viral_gupta" client:load/>
+        <span class="social-label">/a_viral_gupta</span>
+      </div>
+      <div class="social-list-item">
+        <Social imageSrc="../../public/instagram.webp" alt="Instagram" href="https://www.instagram.com/a_viral_gupta" client:load/>
+        <span class="social-label">/a_viral_gupta</span>
+      </div>
+</div>
+
+<style>
+    .social-tab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        height: 100vh;
+        justify-content: center;
+    }
+
+    .social-list-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .social-label {
+        font-size: 21px;
+        font-weight: 800;
+        font-family: monospace;
+        letter-spacing: 2px;
+    }
+</style>
