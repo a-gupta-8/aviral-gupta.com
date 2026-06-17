@@ -1,0 +1,38 @@
+.social-box {
+  position: relative; /* keep only if needed for ::before */
+
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+  overflow: hidden;
+
+  background-color: hwb(250 11% 80%);
+}
+/* Animated fill bar */
+.social-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  width: 0%;
+  background-color: white;
+  border-radius: 11px;
+
+  z-index: 0;
+  transition: width 1.5s ease;
+}
+
+.social-box:hover::before {
+  width: 100%;
+}
+
+.social-image {
+  width: 80%;
+  height: 80%;
+  object-fit: contain; /* or cover */
+}
