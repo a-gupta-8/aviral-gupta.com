@@ -13,6 +13,7 @@
 
   background-color: hwb(250 11% 80%);
 }
+
 /* Animated fill bar */
 .social-box::before {
   content: "";
