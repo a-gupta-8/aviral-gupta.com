@@ -16,8 +16,8 @@ I built my portfolio website to create a professional online presence and demons
 [Performance Report](https://pagespeed.web.dev/analysis/https-aviral-gupta-com/1r1f86vw3c?form_factor=desktop)
 
 I have serialized the pages in a way to maximize page performance:
---image
---image
+![Desktop Performance](./proud-proxima/Desktop_Performance.png)
+![Mobile Performance](./proud-proxima/Mobile_Performance.png)
 
 # Challenges
  - Although Astro allows islands, I found it lacking when different islands/components needed to communicate with each other. For example, an '*.astro' file can use </slot> or direct imports to another .astro or .jsx file, it is not true the other way around. The jsx file cannot implement astro components. This makes it difficult if props from jsx components need to trickle data or states back up to parent astro component, as the parent will only render HTML to browser once and only jsx can hydrate afterwards. During Development this made it diffcult for me to build strict astro components which could render based on current state of something.
@@ -27,3 +27,4 @@ I have serialized the pages in a way to maximize page performance:
 # Coming Soon...
 - Full Projects to Projects Page (still working on the content to show, features, how to integrate)
 - Performance Improvements:
+  ![Insights](./proud-proxima/Page_Insights.png)
